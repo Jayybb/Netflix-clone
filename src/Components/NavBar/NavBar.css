@@ -1,0 +1,148 @@
+/* General Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-left ul {
+  display: flex;
+  list-style: none;
+  margin-left: 20px;
+}
+
+.navbar-left ul li {
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar-left ul li:hover {
+  color: #ccc;
+}
+
+/* Right side icons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right .icons {
+  margin-left: 20px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.navbar-right p {
+  color: white;
+  margin-left: 20px;
+}
+
+.navbar-profile {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.navbar-profile .profile {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.navbar-profile .dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-profile .dropdown p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.navbar-profile .dropdown p:hover {
+  color: #ccc;
+}
+
+/* Scroll effect */
+.nav-dark {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media Queries */
+
+/* For smaller screens (tablets and phones) */
+@media (max-width: 768px) {
+  .navbar-left ul {
+    display: none;
+  }
+
+  .navbar-left {
+    margin-left: 10px;
+  }
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-profile {
+    margin-left: 10px;
+  }
+
+  .navbar-right .icons {
+    margin-left: 10px;
+  }
+}
+
+/* For very small screens (mobile phones) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px 10px;
+  }
+
+  .navbar-left img {
+    height: 30px;
+  }
+
+  .navbar-right .icons {
+    height: 20px;
+    margin-left: 10px;
+  }
+
+  .navbar-right p {
+    font-size: 12px;
+  }
+
+  .navbar-profile .profile {
+    height: 25px;
+    width: 25px;
+  }
+}

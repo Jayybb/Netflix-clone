@@ -1,0 +1,67 @@
+/* Player.css */
+
+.player {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.player img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.player iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: none;
+}
+
+.player-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.player-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Optional: add some responsive adjustments */
+@media (max-width: 768px) {
+  .player-info {
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+  }
+
+  .player img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+
+
+
+
+
+  

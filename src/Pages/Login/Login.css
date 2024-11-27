@@ -1,0 +1,175 @@
+/* Main container for the login page */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141414; /* Dark background */
+  background-image: url('/background_banner.jpg'); /* Set background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Form container */
+.login-form {
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black */
+  padding: 40px 50px;
+  border-radius: 12px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Move the Netflix logo to the left */
+.login-logo {
+  width: 180px;
+  margin-bottom: 40px; /* Add more space for the logo at the top */
+  object-fit: contain;
+  position: absolute;
+  top: 20px; /* Position logo at the top */
+  left: 20px; /* Move logo to the left */
+}
+
+/* Form heading */
+.login-form h1 {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: #e50914; /* Netflix Red */
+  font-weight: bold;
+}
+
+/* Styling for input fields */
+.login-form input {
+  width: 100%;
+  padding: 16px;
+  margin: 12px 0;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+/* Input fields focus effect */
+.login-form input:focus {
+  border: 2px solid #e50914; /* Netflix Red border on focus */
+  outline: none;
+}
+
+/* Button styling */
+.login-form button {
+  width: 100%;
+  padding: 16px;
+  background-color: #e50914; /* Netflix Red */
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #f40612; /* Darker red on hover */
+}
+
+/* Help and remember me section */
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #757575;
+}
+
+/* Remember me checkbox styling */
+.remember input {
+  margin-right: 8px;
+  transform: scale(1.2); /* Slightly larger checkbox */
+}
+
+/* Styling for the 'Need Help?' text */
+.form-help p {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.form-help p:hover {
+  color: #e50914; /* Netflix Red on hover */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .login-form {
+    padding: 30px;
+    width: 90%;
+  }
+
+  .login-logo {
+    width: 150px;
+  }
+
+  .login-form h1 {
+    font-size: 22px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 14px;
+  }
+}
+.form-switch {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #3b3838;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form-switch p {
+  margin: 10px 0;
+}
+
+.form-switch span {
+  color: #e50914; /* Netflix's signature red */
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.form-switch span:hover {
+  color: #b20710; /* Slightly darker red for hover effect */
+}
+/* CSS for the login spinner */
+.login_spinner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.login_spinner img {
+  width: 100px; /* Set the size of the spinner */
+  height: 100px;
+  object-fit: contain;
+}
+
+
+
