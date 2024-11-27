@@ -1,4 +1,4 @@
-Netflix Clone App – Built with React, Firebase, TMDb API, and Toastify
+**Netflix Clone App** – Built with React, Firebase, TMDb API, and Toastify
 
 This Netflix clone app is a modern and sleek movie streaming platform designed to mimic the core functionality and design of Netflix. Built using ReactJS, Firebase, TMDb API, and Toastify, the app provides an immersive and responsive experience for discovering and watching movies and TV shows.
 
@@ -23,3 +23,26 @@ Backend: Firebase Authentication, Firestore Database, Firebase Hosting
 APIs: TMDb API (for movie data)
 UI/UX: Toastify (for notifications), CSS (for responsive design)
 Deployment: Firebase Hosting for fast and reliable deployment
+Get Started Locally:
+To run the app on your local machine, follow these steps:
+
+Clone the repository from GitHub:
+
+git clone https://github.com/Jayybb/Netflix-clone.git
+Navigate to the project folder:
+
+cd Netflix-clone
+Install dependencies:
+
+npm install
+Start the development server:
+
+npm run dev
+The app will be available at:
+
+Local URL: http://localhost:5173/
+Network: If you want to expose the app on your local network, run npm run dev -- --host and access it via your local IP.
+Access the Repo:
+You can access the full source code of the project on GitHub:
+
+GitHub Repository: https://github.com/Jayybb/Netflix-clone.git
